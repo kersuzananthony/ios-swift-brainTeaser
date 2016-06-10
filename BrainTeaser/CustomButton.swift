@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import pop
 
 @IBDesignable
 class CustomButton: UIButton {
@@ -44,5 +45,30 @@ class CustomButton: UIButton {
     func setUpView() {
         self.layer.cornerRadius = cornerRadius
         self.tintColor = fontColor
+        
+        self.addTarget(self, action: #selector(CustomButton.scaleToSmall), forControlEvents: UIControlEvents.TouchDown)
+        self.addTarget(self, action: #selector(CustomButton.scaleToSmall), forControlEvents: UIControlEvents.TouchDragEnter)
+        self.addTarget(self, action: #selector(CustomButton.scaleAnimation), forControlEvents: UIControlEvents.TouchUpInside)
+        self.addTarget(self, action: #selector(CustomButton.scaleToDefault), forControlEvents: UIControlEvents.TouchDragExit)
+    }
+    
+    func scaleToSmall() {
+        let scaleAnim = POPBasicAnimation(propertyNamed: kPOPLayerScaleXY)
+        scaleAnim.toValue = NSValue(CGSize: CGSizeMake(0.95, 0.95))
+        self.layer.pop_addAnimation(scaleAnim, forKey: "layerScaleSmallAnimation")
+    }
+    
+    func scaleAnimation() {
+        let scaleAnim = POPSpringAnimation(propertyNamed: kPOPLayerScaleXY)
+        scaleAnim.velocity = NSValue(CGSize: CGSizeMake(3.0, 3.0))
+        scaleAnim.toValue = NSValue(CGSize: CGSizeMake(1.0, 1.0))
+        scaleAnim.springBounciness = 18
+        self.layer.pop_addAnimation(scaleAnim, forKey: "layerScaleSpringAnimation")
+    }
+    
+    func scaleToDefault() {
+        let scaleAnim = POPBasicAnimation(propertyNamed: kPOPLayerScaleXY)
+        scaleAnim.toValue = NSValue(CGSize: CGSizeMake(1.0, 1.0))
+        self.layer.pop_addAnimation(scaleAnim, forKey: "layerScaleDefaultAnimation")
     }
 }
