@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--LoginVC-->
@@ -65,6 +66,9 @@
                                     <constraint firstAttribute="width" constant="140" id="iHJ-RM-DCv"/>
                                 </constraints>
                                 <state key="normal" title="Login"/>
+                                <connections>
+                                    <segue destination="5wQ-uv-zmb" kind="show" id="KvH-us-UdY"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -94,6 +98,76 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="296" y="387"/>
+        </scene>
+        <!--GameVC-->
+        <scene sceneID="62k-ZL-Vze">
+            <objects>
+                <viewController id="5wQ-uv-zmb" customClass="GameVC" customModule="BrainTeaser" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Kx1-1c-Of5"/>
+                        <viewControllerLayoutGuide type="bottom" id="XD9-cW-eh0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="52l-tH-Dv7">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kYT-e7-cRL" customClass="CustomButton" customModule="BrainTeaser" customModuleProvider="target">
+                                <rect key="frame" x="20" y="540" width="100" height="40"/>
+                                <color key="backgroundColor" red="0.066666666669999999" green="0.57254901960000004" blue="0.83137254900000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="140" id="A9Y-Kh-vd9"/>
+                                    <constraint firstAttribute="width" constant="100" id="IT5-m2-BvM"/>
+                                    <constraint firstAttribute="height" constant="40" id="cQr-A6-268"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
+                                <state key="normal" title="NO"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="A9Y-Kh-vd9"/>
+                                    </mask>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v9p-ZE-Qbv" customClass="CustomButton" customModule="BrainTeaser" customModuleProvider="target">
+                                <rect key="frame" x="480" y="540" width="100" height="40"/>
+                                <color key="backgroundColor" red="0.066666666669999999" green="0.57254901960000004" blue="0.83137254900000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="140" id="DSY-hQ-Uo2"/>
+                                    <constraint firstAttribute="width" constant="100" id="VhV-HS-VE6"/>
+                                    <constraint firstAttribute="height" constant="40" id="nck-4N-fry"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
+                                <state key="normal" title="START"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="DSY-hQ-Uo2"/>
+                                    </mask>
+                                </variation>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Remember this image" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9MZ-cz-D8W">
+                                <rect key="frame" x="20" y="40" width="560" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="KSh-vw-RZ9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="v9p-ZE-Qbv" firstAttribute="trailing" secondItem="52l-tH-Dv7" secondAttribute="trailingMargin" id="7V3-Vi-94M"/>
+                            <constraint firstItem="XD9-cW-eh0" firstAttribute="top" secondItem="kYT-e7-cRL" secondAttribute="bottom" constant="20" id="BMy-IG-A5X"/>
+                            <constraint firstItem="XD9-cW-eh0" firstAttribute="top" secondItem="v9p-ZE-Qbv" secondAttribute="bottom" constant="20" id="CaV-Bj-j6d"/>
+                            <constraint firstItem="9MZ-cz-D8W" firstAttribute="trailing" secondItem="52l-tH-Dv7" secondAttribute="trailingMargin" id="KJw-fh-ihY"/>
+                            <constraint firstItem="9MZ-cz-D8W" firstAttribute="top" secondItem="Kx1-1c-Of5" secondAttribute="bottom" constant="20" id="cXL-10-4lB"/>
+                            <constraint firstItem="9MZ-cz-D8W" firstAttribute="leading" secondItem="52l-tH-Dv7" secondAttribute="leadingMargin" id="nHy-lj-Rvk"/>
+                            <constraint firstItem="kYT-e7-cRL" firstAttribute="leading" secondItem="52l-tH-Dv7" secondAttribute="leadingMargin" id="uvv-JS-ZIq"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UVL-WF-LQT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="968" y="387"/>
         </scene>
     </scenes>
     <resources>

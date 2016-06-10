@@ -16,6 +16,9 @@
 		DCC435111D0A6259005E1A63 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC435101D0A6259005E1A63 /* CustomTextField.swift */; };
 		DCC435131D0A6401005E1A63 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC435121D0A6401005E1A63 /* CustomButton.swift */; };
 		DCC435161D0A6C0B005E1A63 /* AnimationEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC435151D0A6C0B005E1A63 /* AnimationEngine.swift */; };
+		DCC435181D0A7957005E1A63 /* GameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC435171D0A7957005E1A63 /* GameVC.swift */; };
+		DCC4351A1D0A7AB4005E1A63 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC435191D0A7AB4005E1A63 /* Card.swift */; };
+		DCC4351C1D0A7AC1005E1A63 /* Card.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCC4351B1D0A7AC1005E1A63 /* Card.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +36,9 @@
 		DCC435101D0A6259005E1A63 /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		DCC435121D0A6401005E1A63 /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		DCC435151D0A6C0B005E1A63 /* AnimationEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationEngine.swift; sourceTree = "<group>"; };
+		DCC435171D0A7957005E1A63 /* GameVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameVC.swift; sourceTree = "<group>"; };
+		DCC435191D0A7AB4005E1A63 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		DCC4351B1D0A7AC1005E1A63 /* Card.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Card.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +101,8 @@
 			children = (
 				DCC435101D0A6259005E1A63 /* CustomTextField.swift */,
 				DCC435121D0A6401005E1A63 /* CustomButton.swift */,
+				DCC435191D0A7AB4005E1A63 /* Card.swift */,
+				DCC4351B1D0A7AC1005E1A63 /* Card.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -103,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				DC77D7FD1D0A5C2A00EA6C88 /* LoginVC.swift */,
+				DCC435171D0A7957005E1A63 /* GameVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -187,6 +196,7 @@
 				DC77D8061D0A5C2A00EA6C88 /* LaunchScreen.storyboard in Resources */,
 				DC77D8031D0A5C2A00EA6C88 /* Assets.xcassets in Resources */,
 				DC77D8011D0A5C2A00EA6C88 /* Main.storyboard in Resources */,
+				DCC4351C1D0A7AC1005E1A63 /* Card.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,8 +257,10 @@
 			files = (
 				DCC435131D0A6401005E1A63 /* CustomButton.swift in Sources */,
 				DC77D7FE1D0A5C2A00EA6C88 /* LoginVC.swift in Sources */,
+				DCC4351A1D0A7AB4005E1A63 /* Card.swift in Sources */,
 				DC77D7FC1D0A5C2A00EA6C88 /* AppDelegate.swift in Sources */,
 				DCC435161D0A6C0B005E1A63 /* AnimationEngine.swift in Sources */,
+				DCC435181D0A7957005E1A63 /* GameVC.swift in Sources */,
 				DCC435111D0A6259005E1A63 /* CustomTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
