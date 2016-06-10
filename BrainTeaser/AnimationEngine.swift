@@ -35,6 +35,7 @@ class AnimationEngine {
         self.constraints = constraints
     }
     
+    // Animate constraints
     func animateOnScreen(delay: Double?) {
         
         let d = delay == nil ? 0.8 * Double(NSEC_PER_SEC) : delay! * Double(NSEC_PER_SEC)
@@ -59,5 +60,19 @@ class AnimationEngine {
                 
             } while (index < self.constraints.count)
         }
+    }
+    
+    // Pure View Moving
+    class func animateToPosition(view: UIView, position: CGPoint, completion: ((POPAnimation!, Bool) -> Void)?) {
+        let moveAnim = POPSpringAnimation(propertyNamed: kPOPLayerPosition)
+        moveAnim.toValue = NSValue(CGPoint: position)
+        moveAnim.springBounciness = 8
+        moveAnim.springSpeed = 8
+        
+        if completion != nil {
+            moveAnim.completionBlock = completion!
+        }
+        
+        view.pop_addAnimation(moveAnim, forKey: "moveToPosition")
     }
 }

@@ -126,6 +126,9 @@
                                         <exclude reference="A9Y-Kh-vd9"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <action selector="noPressed:" destination="5wQ-uv-zmb" eventType="touchUpInside" id="ZSw-Vc-FCW"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v9p-ZE-Qbv" customClass="CustomButton" customModule="BrainTeaser" customModuleProvider="target">
                                 <rect key="frame" x="480" y="540" width="100" height="40"/>
@@ -142,6 +145,9 @@
                                         <exclude reference="DSY-hQ-Uo2"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <action selector="yesPressed:" destination="5wQ-uv-zmb" eventType="touchUpInside" id="IPU-ba-nio"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Remember this image" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9MZ-cz-D8W">
                                 <rect key="frame" x="20" y="40" width="560" height="32"/>
@@ -164,6 +170,11 @@
                             <constraint firstItem="kYT-e7-cRL" firstAttribute="leading" secondItem="52l-tH-Dv7" secondAttribute="leadingMargin" id="uvv-JS-ZIq"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="noButton" destination="kYT-e7-cRL" id="aEn-HY-hxX"/>
+                        <outlet property="titleLabel" destination="9MZ-cz-D8W" id="Hd9-vo-NSA"/>
+                        <outlet property="yesButton" destination="v9p-ZE-Qbv" id="g8O-yG-SJ4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UVL-WF-LQT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
