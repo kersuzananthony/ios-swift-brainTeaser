@@ -13,6 +13,8 @@
 		DC77D8011D0A5C2A00EA6C88 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC77D7FF1D0A5C2A00EA6C88 /* Main.storyboard */; };
 		DC77D8031D0A5C2A00EA6C88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC77D8021D0A5C2A00EA6C88 /* Assets.xcassets */; };
 		DC77D8061D0A5C2A00EA6C88 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC77D8041D0A5C2A00EA6C88 /* LaunchScreen.storyboard */; };
+		DCC435111D0A6259005E1A63 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC435101D0A6259005E1A63 /* CustomTextField.swift */; };
+		DCC435131D0A6401005E1A63 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC435121D0A6401005E1A63 /* CustomButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,8 @@
 		DC77D8051D0A5C2A00EA6C88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DC77D8071D0A5C2A00EA6C88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DCC4350B1D0A5FA6005E1A63 /* BrainTeaser-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BrainTeaser-Bridging-Header.h"; sourceTree = "<group>"; };
+		DCC435101D0A6259005E1A63 /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		DCC435121D0A6401005E1A63 /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,8 +75,9 @@
 		DC77D7FA1D0A5C2A00EA6C88 /* BrainTeaser */ = {
 			isa = PBXGroup;
 			children = (
+				DCC4350F1D0A622D005E1A63 /* Controller */,
+				DCC4350E1D0A6227005E1A63 /* View */,
 				DC77D7FB1D0A5C2A00EA6C88 /* AppDelegate.swift */,
-				DC77D7FD1D0A5C2A00EA6C88 /* LoginVC.swift */,
 				DC77D7FF1D0A5C2A00EA6C88 /* Main.storyboard */,
 				DC77D8021D0A5C2A00EA6C88 /* Assets.xcassets */,
 				DC77D8041D0A5C2A00EA6C88 /* LaunchScreen.storyboard */,
@@ -80,6 +85,23 @@
 				DCC4350B1D0A5FA6005E1A63 /* BrainTeaser-Bridging-Header.h */,
 			);
 			path = BrainTeaser;
+			sourceTree = "<group>";
+		};
+		DCC4350E1D0A6227005E1A63 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DCC435101D0A6259005E1A63 /* CustomTextField.swift */,
+				DCC435121D0A6401005E1A63 /* CustomButton.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		DCC4350F1D0A622D005E1A63 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DC77D7FD1D0A5C2A00EA6C88 /* LoginVC.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 		FD3524ED912F7A380F95C374 /* Frameworks */ = {
@@ -212,8 +234,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCC435131D0A6401005E1A63 /* CustomButton.swift in Sources */,
 				DC77D7FE1D0A5C2A00EA6C88 /* LoginVC.swift in Sources */,
 				DC77D7FC1D0A5C2A00EA6C88 /* AppDelegate.swift in Sources */,
+				DCC435111D0A6259005E1A63 /* CustomTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

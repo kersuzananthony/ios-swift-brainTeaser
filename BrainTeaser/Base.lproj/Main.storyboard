@@ -24,29 +24,45 @@
                                     <constraint firstAttribute="width" constant="200" id="NVd-ud-b9c"/>
                                 </constraints>
                             </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ptz-hx-Ti7">
-                                <rect key="frame" x="150" y="275" width="300" height="35"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ptz-hx-Ti7" customClass="CustomTextField" customModule="BrainTeaser" customModuleProvider="target">
+                                <rect key="frame" x="150" y="275" width="300" height="40"/>
+                                <color key="backgroundColor" red="0.90196078431372551" green="0.90196078431372551" blue="0.90196078431372551" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="0it-XA-JH9"/>
-                                    <constraint firstAttribute="height" constant="35" id="25h-DZ-Jxa"/>
+                                    <constraint firstAttribute="height" constant="40" id="25h-DZ-Jxa"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="inset">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qWz-9Z-Xa5">
-                                <rect key="frame" x="150" y="345" width="300" height="35"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qWz-9Z-Xa5" customClass="CustomTextField" customModule="BrainTeaser" customModuleProvider="target">
+                                <rect key="frame" x="150" y="340" width="300" height="40"/>
+                                <color key="backgroundColor" red="0.8784313725490196" green="0.8784313725490196" blue="0.8784313725490196" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="35" id="Ccn-IU-2SB"/>
+                                    <constraint firstAttribute="height" constant="40" id="Ccn-IU-2SB"/>
                                     <constraint firstAttribute="width" constant="300" id="Ogd-4s-3tJ"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="inset">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="upi-f1-JVN">
-                                <rect key="frame" x="260" y="415" width="80" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="upi-f1-JVN" customClass="CustomButton" customModule="BrainTeaser" customModuleProvider="target">
+                                <rect key="frame" x="230" y="405" width="140" height="40"/>
+                                <color key="backgroundColor" red="0.066666666666666666" green="0.5725490196078431" blue="0.83137254901960778" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="Oom-9L-cyw"/>
-                                    <constraint firstAttribute="width" constant="80" id="iHJ-RM-DCv"/>
+                                    <constraint firstAttribute="height" constant="40" id="Oom-9L-cyw"/>
+                                    <constraint firstAttribute="width" constant="140" id="iHJ-RM-DCv"/>
                                 </constraints>
                                 <state key="normal" title="Login"/>
                             </button>
@@ -54,14 +70,20 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Ha0-ZJ-Z5k" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3Hx-O0-OQh"/>
-                            <constraint firstItem="upi-f1-JVN" firstAttribute="top" secondItem="qWz-9Z-Xa5" secondAttribute="bottom" constant="35" id="BJq-wK-U3y"/>
+                            <constraint firstItem="upi-f1-JVN" firstAttribute="top" secondItem="qWz-9Z-Xa5" secondAttribute="bottom" constant="25" id="BJq-wK-U3y"/>
                             <constraint firstItem="Ptz-hx-Ti7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Lec-DW-pv6"/>
                             <constraint firstItem="Ptz-hx-Ti7" firstAttribute="top" secondItem="Ha0-ZJ-Z5k" secondAttribute="bottom" constant="35" id="NIU-iJ-XuH"/>
                             <constraint firstItem="Ha0-ZJ-Z5k" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="Q60-1R-KO2"/>
                             <constraint firstItem="qWz-9Z-Xa5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="g1v-g3-vjq"/>
-                            <constraint firstItem="qWz-9Z-Xa5" firstAttribute="top" secondItem="Ptz-hx-Ti7" secondAttribute="bottom" constant="35" id="kPh-Ki-bth"/>
-                            <constraint firstItem="upi-f1-JVN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tUH-19-oBr"/>
+                            <constraint firstItem="qWz-9Z-Xa5" firstAttribute="top" secondItem="Ptz-hx-Ti7" secondAttribute="bottom" constant="25" id="kPh-Ki-bth"/>
+                            <constraint firstItem="upi-f1-JVN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="su7-t8-Yh5"/>
+                            <constraint firstItem="upi-f1-JVN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-30" id="tUH-19-oBr"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="tUH-19-oBr"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
