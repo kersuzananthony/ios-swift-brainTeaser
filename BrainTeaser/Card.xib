@@ -18,12 +18,21 @@
                         <constraint firstAttribute="height" constant="200" id="xyp-dM-tOi"/>
                     </constraints>
                 </imageView>
+                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bRz-I8-pXX">
+                    <rect key="frame" x="196" y="196" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="Xhw-TP-Bx4"/>
+                        <constraint firstAttribute="height" constant="50" id="sO3-xQ-h2S"/>
+                    </constraints>
+                </imageView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
+                <constraint firstAttribute="trailing" secondItem="bRz-I8-pXX" secondAttribute="trailing" constant="4" id="JhD-8d-try"/>
                 <constraint firstItem="CHO-RZ-HeB" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" symbolic="YES" id="Xnh-Fw-acU"/>
                 <constraint firstItem="CHO-RZ-HeB" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="bYs-ED-oPV"/>
                 <constraint firstItem="CHO-RZ-HeB" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="sk7-sY-fSn"/>
+                <constraint firstAttribute="bottom" secondItem="bRz-I8-pXX" secondAttribute="bottom" constant="4" id="ulX-62-hKc"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <variation key="default">
@@ -32,6 +41,7 @@
                 </mask>
             </variation>
             <connections>
+                <outlet property="answerImage" destination="bRz-I8-pXX" id="CC9-8S-dgS"/>
                 <outlet property="shapeImage" destination="CHO-RZ-HeB" id="Pyj-JS-gdb"/>
             </connections>
         </view>

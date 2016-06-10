@@ -158,6 +158,16 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HDh-Ye-Rqc">
+                                <rect key="frame" x="267" y="503" width="67" height="27"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="67" id="Jie-kx-q8t"/>
+                                    <constraint firstAttribute="height" constant="27" id="Z58-1q-qlz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -168,10 +178,13 @@
                             <constraint firstItem="9MZ-cz-D8W" firstAttribute="top" secondItem="Kx1-1c-Of5" secondAttribute="bottom" constant="20" id="cXL-10-4lB"/>
                             <constraint firstItem="9MZ-cz-D8W" firstAttribute="leading" secondItem="52l-tH-Dv7" secondAttribute="leadingMargin" id="nHy-lj-Rvk"/>
                             <constraint firstItem="kYT-e7-cRL" firstAttribute="leading" secondItem="52l-tH-Dv7" secondAttribute="leadingMargin" id="uvv-JS-ZIq"/>
+                            <constraint firstItem="XD9-cW-eh0" firstAttribute="top" secondItem="HDh-Ye-Rqc" secondAttribute="bottom" constant="70" id="xQh-Dr-hZb"/>
+                            <constraint firstItem="HDh-Ye-Rqc" firstAttribute="centerX" secondItem="52l-tH-Dv7" secondAttribute="centerX" id="xti-91-Q7D"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="noButton" destination="kYT-e7-cRL" id="aEn-HY-hxX"/>
+                        <outlet property="timeLabel" destination="HDh-Ye-Rqc" id="ZBS-VI-ECf"/>
                         <outlet property="titleLabel" destination="9MZ-cz-D8W" id="Hd9-vo-NSA"/>
                         <outlet property="yesButton" destination="v9p-ZE-Qbv" id="g8O-yG-SJ4"/>
                     </connections>

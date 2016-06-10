@@ -19,6 +19,8 @@
 		DCC435181D0A7957005E1A63 /* GameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC435171D0A7957005E1A63 /* GameVC.swift */; };
 		DCC4351A1D0A7AB4005E1A63 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC435191D0A7AB4005E1A63 /* Card.swift */; };
 		DCC4351C1D0A7AC1005E1A63 /* Card.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCC4351B1D0A7AC1005E1A63 /* Card.xib */; };
+		DCC4351E1D0A8E96005E1A63 /* ScoreCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC4351D1D0A8E96005E1A63 /* ScoreCard.swift */; };
+		DCC435201D0A8EA9005E1A63 /* ScoreCard.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCC4351F1D0A8EA9005E1A63 /* ScoreCard.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +41,8 @@
 		DCC435171D0A7957005E1A63 /* GameVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameVC.swift; sourceTree = "<group>"; };
 		DCC435191D0A7AB4005E1A63 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		DCC4351B1D0A7AC1005E1A63 /* Card.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Card.xib; sourceTree = "<group>"; };
+		DCC4351D1D0A8E96005E1A63 /* ScoreCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoreCard.swift; sourceTree = "<group>"; };
+		DCC4351F1D0A8EA9005E1A63 /* ScoreCard.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScoreCard.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,8 @@
 				DCC435121D0A6401005E1A63 /* CustomButton.swift */,
 				DCC435191D0A7AB4005E1A63 /* Card.swift */,
 				DCC4351B1D0A7AC1005E1A63 /* Card.xib */,
+				DCC4351D1D0A8E96005E1A63 /* ScoreCard.swift */,
+				DCC4351F1D0A8EA9005E1A63 /* ScoreCard.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -194,6 +200,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC77D8061D0A5C2A00EA6C88 /* LaunchScreen.storyboard in Resources */,
+				DCC435201D0A8EA9005E1A63 /* ScoreCard.xib in Resources */,
 				DC77D8031D0A5C2A00EA6C88 /* Assets.xcassets in Resources */,
 				DC77D8011D0A5C2A00EA6C88 /* Main.storyboard in Resources */,
 				DCC4351C1D0A7AC1005E1A63 /* Card.xib in Resources */,
@@ -255,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCC4351E1D0A8E96005E1A63 /* ScoreCard.swift in Sources */,
 				DCC435131D0A6401005E1A63 /* CustomButton.swift in Sources */,
 				DC77D7FE1D0A5C2A00EA6C88 /* LoginVC.swift in Sources */,
 				DCC4351A1D0A7AB4005E1A63 /* Card.swift in Sources */,
