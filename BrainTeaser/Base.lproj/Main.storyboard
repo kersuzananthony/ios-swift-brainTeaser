@@ -85,6 +85,11 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="emailConstraint" destination="Lec-DW-pv6" id="DPs-Hq-9XN"/>
+                        <outlet property="loginConstraint" destination="su7-t8-Yh5" id="war-uj-GQh"/>
+                        <outlet property="passwordConstraint" destination="g1v-g3-vjq" id="d6F-fe-8I4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
